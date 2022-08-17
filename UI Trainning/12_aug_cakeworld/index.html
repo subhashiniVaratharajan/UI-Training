@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cake World</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#"><img src="assets/cake.png" alt=""></a>
+            <p>Cake World</p>
+        </header>
+
+        <div class="flavours">
+            <div class="variety">
+                <h3>Prices</h3>
+                <p>Chocolate-----70</p>
+                <p>Butterscotch--100</p>
+                <p>Pista--60</p>
+                <p>strawberry--------50</p>
+                <p>Blackcurren-----150</p>
+            </div>
+           
+            <div class="buttons">
+                <button onclick="addFlavour('chocolate')" class="button" id="chocolate">Chocolate</button>
+                <button onclick="addFlavour('butterscotch')" class="button" id="Butterscotch">Butterscotch</button>
+                <button onclick="addFlavour('Pista')" class="button" id="Pista">Pista</button>
+                <button onclick="addFlavour('strawberry')" class="button" id="strawberry">strawberry</button>
+                <button onclick="addFlavour('Blackcurren')" class="button" id="Blackcurren">Blackcurren</button>
+                <button onclick="calTotal()" class="button" id="buy">Buy</button>
+                <button onclick="reset()" class="button" id="reset">Reset</button>
+            </div>
+           
+           
+            
+        </div>
+        <div class="middle" id="middle">
+            <div id="tar"></div>
+        </div>
+        <div class="amount" id="amount">
+            <h3>Bill</h3>
+        </div>
+       
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

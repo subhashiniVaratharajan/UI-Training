@@ -1,0 +1,33 @@
+h1{
+    
+    color:red;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+
+    
+}
+
+body{
+    background-color: white;
+    border:1px solid;
+    color:normal;
+}
+
+
+a:visited{
+    color:red;
+}
+a:hover{
+    color:blue;
+}
+a:active{
+    color:green;
+}
+
+img{
+    border-radius: 50%;
+}
+
+
+
+
