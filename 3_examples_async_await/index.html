@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let promise = new Promise(function (resolve, reject) {
+   // setTimeout(function () {
+    //resolve('Promise resolved')}, 4000); 
+//});
+
+
+//async function asyncFunc() {
+
+    
+    //let result = await promise; 
+
+    //console.log(result);
+    //console.log('hello');
+//}
+
+
+//asyncFunc();
+
+//example 2
+
+/*function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  // expected output: "resolved"
+}
+
+asyncCall();*/
+
+
+
+//example 3
+
+//async function example() {
+
+//let promise = new Promise((resolve, reject) => {
+  //setTimeout(() => resolve("done!"), 2000)
+//});
+
+//let result = await promise; // wait until the promise resolves (*)
+
+//alert(result); // "done!"
+//}
+
+//example();
+
+const movies = [
+        { title: `A New Hope`, body:`After Princess Leia, the leader of the Rebel Alliance, is held hostage by Darth Vader, Luke and Han Solo must free her and destroy the powerful weapon created by the Galactic Empire.`},
+        { title: `The Empire Strikes Back`, body: `Darth Vader is adamant about turning Luke Skywalker to the dark side. Master Yoda trains Luke to become a Jedi Knight while his friends try to fend off the Imperial fleet.` }
+    ]
+
+function getMovies(){
+    setTimeout(() => {
+        movies.forEach((movie, index) => {
+            console.log(movie.title)
+        })
+    }, 1000);
+}
+
+function createMovies(movie){
+    setTimeout(() => {
+        movies.push(movie)
+    }, 2000);
+}
+
+getMovies();
+
+
+createMovies({ title: `Return of the Jedi`, body:`Luke Skywalker attempts to bring his father back to the light side of the Force. At the same time, the rebels hatch a plan to destroy the second Death Star.` });
+
+
+    </script>
+    
+</body>
+
+</html>
