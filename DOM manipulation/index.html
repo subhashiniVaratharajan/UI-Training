@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>DOM manipulation</title>
+</head>
+
+<body style="font-weight:bold;">
+<p id="dom1">TEXT THAT WILL GET CHANGED</p>
+ <button onclick="func1()">getbyid</button>
+ <br><br>
+ <hr>
+<p class="dom2">QUERYALL</p>
+<button onclick="func3()">queryselector</button>
+<br><br>
+<hr>
+<script>
+    function func1() {
+        document.getElementById("dom1").innerHTML =
+            "GetElement by id:In this method, a HTML element can be found by using its Id.";
+    }
+function func3() {
+        const tt = document.querySelectorAll("p.dom2");
+        document.getElementById("dom1").innerHTML = 'The first paragraph that get changed by clicking the id button displays class again to the zeroth element  by using queryselector   '
+            + tt[0].innerHTML;
+    }
+    function func4() {
+        document.getElementById("dom1").style.color = "pink";
+    }
+    function func5() {
+        document.getElementById("btn").disabled = true;
+    }
+</script>
+</body>
+</html>
+
